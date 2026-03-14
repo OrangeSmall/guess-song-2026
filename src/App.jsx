@@ -76,6 +76,19 @@ export default function App() {
   const audioRef = useRef(null); 
   const currentQuestion = INITIAL_QUESTIONS[currentQIndex];
 
+  // 動態替換網頁標籤圖示 (Favicon) 與標題
+  useEffect(() => {
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    // 使用 GitHub 原始檔案的連結格式 (raw.githubusercontent.com)
+    link.href = 'https://raw.githubusercontent.com/OrangeSmall/seafood-menu-app/main/logo.png';
+    document.title = "戰國猜歌繪卷";
+  }, []);
+
   const clearAllTimers = () => {
     if (musicTimeoutRef.current) clearTimeout(musicTimeoutRef.current);
   };
