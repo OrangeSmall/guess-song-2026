@@ -63,8 +63,8 @@ const INITIAL_QUESTIONS = [
   { id: 26, songName: "Love Story", artist: "Taylor Swift《Fearless》2008年", musicSrc: "/music/q26.MP3", videoYoutubeId: "8xg3vE8Ie_E", videoStartTime: 196 },
   { id: 27, songName: "手放開", artist: "李聖傑《絕對痴心·手放開》2004年", musicSrc: "/music/q27.mp3", videoYoutubeId: "g7xmoYFFduk", videoStartTime: 101 },
   { id: 28, songName: "突然好想你", artist: "五月天《後青春期的詩》2008年", musicSrc: "/music/q28.mp3", videoYoutubeId: "GtDRcXtDg-4", videoStartTime: 189 },
-  { id: 29, songName: "流星雨", artist: "《流星花園》2001年", musicSrc: "/music/q29.mp3", videoYoutubeId: "ocTdA8NytIc", videoStartTime: 194 },
-  { id: 30, songName: "放手", artist: "請填寫歌手", musicSrc: "/music/q30.mp3", videoYoutubeId: "v-9IGzCMNks", videoStartTime: 95 }
+  { id: 29, songName: "流星雨", artist: "F4《流星花園》2001年", musicSrc: "/music/q29.mp3", videoYoutubeId: "ocTdA8NytIc", videoStartTime: 194 },
+  { id: 30, songName: "放手", artist: "Energy《Come On》2002年", musicSrc: "/music/q30.mp3", videoYoutubeId: "v-9IGzCMNks", videoStartTime: 95 }
 ];
 
 export default function App() {
