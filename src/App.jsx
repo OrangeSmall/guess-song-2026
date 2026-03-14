@@ -32,7 +32,7 @@ const playBeep = (freq, duration, type = 'sine') => {
 */
 const INITIAL_QUESTIONS = [
   { id: 1, songName: "周杰倫", artist: "愛在西元前", musicSrc: "/music/q1.mp3", videoYoutubeId: "5XK2C9w6oVk", videoStartTime: 93 },
-  { id: 2, songName: "川島茉樹代", artist: "初戀", musicSrc: "/music/q2.mp3", videoYoutubeId: "5c7OCfo9i5Y", videoStartTime: 161 },
+  { id: 2, songName: "川島茉樹代", artist: "初戀", musicSrc: "/music/q2.MP3", videoYoutubeId: "5c7OCfo9i5Y", videoStartTime: 161 },
   { id: 3, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q3.mp3", videoYoutubeId: "", videoStartTime: 0 },
   { id: 4, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q4.mp3", videoYoutubeId: "", videoStartTime: 0 },
   { id: 5, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q5.mp3", videoYoutubeId: "", videoStartTime: 0 },
