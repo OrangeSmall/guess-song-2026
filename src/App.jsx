@@ -31,13 +31,13 @@ const playBeep = (freq, duration, type = 'sine') => {
   包含了 1~30 題，並在 20 與 21 題之間插入了「加賽PK過場」
 */
 const INITIAL_QUESTIONS = [
-  { id: 1, songName: "愛在西元前", artist: "周杰倫", musicSrc: "/music/q1.mp3", videoYoutubeId: "5XK2C9w6oVk", videoStartTime: 93 },
-  { id: 2, songName: "初戀", artist: "川島茉樹代", musicSrc: "/music/q2.MP3", videoYoutubeId: "6F_rBQwLzmY", videoStartTime: 13 },
-  { id: 3, songName: "含淚跳恰恰", artist: "謝金燕", musicSrc: "/music/q3.MP3", videoYoutubeId: "APr9yCQa66Q", videoStartTime: 84 },
-  { id: 4, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q4.mp3", videoYoutubeId: "", videoStartTime: 0 },
-  { id: 5, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q5.mp3", videoYoutubeId: "", videoStartTime: 0 },
-  { id: 6, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q6.mp3", videoYoutubeId: "", videoStartTime: 0 },
-  { id: 7, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q7.mp3", videoYoutubeId: "", videoStartTime: 0 },
+  { id: 1, songName: "愛在西元前", artist: "周杰倫《范特西》2001年", musicSrc: "/music/q1.mp3", videoYoutubeId: "5XK2C9w6oVk", videoStartTime: 93 },
+  { id: 2, songName: "初戀", artist: "川島茉樹代《Makiyo》2000年", musicSrc: "/music/q2.MP3", videoYoutubeId: "6F_rBQwLzmY", videoStartTime: 13 },
+  { id: 3, songName: "含淚跳恰恰", artist: "謝金燕《含淚跳恰恰》1995年", musicSrc: "/music/q3.MP3", videoYoutubeId: "APr9yCQa66Q", videoStartTime: 84 },
+  { id: 4, songName: "Lydia", artist: "F.I.R. 飛兒樂團《F.I.R. 飛兒樂團》2004年", musicSrc: "/music/q4.MP3", videoYoutubeId: "ZOHsd6Zk7DM", videoStartTime: 120 },
+  { id: 5, songName: "演員", artist: "薛之謙《紳士》2015年", musicSrc: "/music/q5.MP3", videoYoutubeId: "XaN3kUz4KSw", videoStartTime: 217 },
+  { id: 6, songName: "妥協", artist: "蔡依林《花蝴蝶》2009年", musicSrc: "/music/q6.MP3", videoYoutubeId: "M00rcJ9gMEc", videoStartTime: 154 },
+  { id: 7, songName: "如果可以", artist: "韋禮安《月老主題曲》2021年", musicSrc: "/music/q7.MP3", videoYoutubeId: "8MG--WuNW1Y", videoStartTime: 147 },
   { id: 8, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q8.mp3", videoYoutubeId: "", videoStartTime: 0 },
   { id: 9, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q9.mp3", videoYoutubeId: "", videoStartTime: 0 },
   { id: 10, songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/q10.mp3", videoYoutubeId: "", videoStartTime: 0 },
