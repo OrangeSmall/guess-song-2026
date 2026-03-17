@@ -28,9 +28,15 @@ const playBeep = (freq, duration, type = 'sine') => {
 /* =========================================
   📜 題庫資料設定區
   =========================================
-  包含了 1~30 題，並在 20 與 21 題之間插入了「加賽PK過場」
+  包含了 3題暖身題 + 30題正式題目 + 1個PK過場
 */
 const INITIAL_QUESTIONS = [
+  // 🌟 暖身題
+  { id: 'w1', isWarmup: true, displayTitle: "暖身題 一", songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/w1.mp3", videoYoutubeId: "", videoStartTime: 0 },
+  { id: 'w2', isWarmup: true, displayTitle: "暖身題 二", songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/w2.mp3", videoYoutubeId: "", videoStartTime: 0 },
+  { id: 'w3', isWarmup: true, displayTitle: "暖身題 三", songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/w3.mp3", videoYoutubeId: "", videoStartTime: 0 },
+
+  // 🎯 正式題目
   { id: 1, songName: "愛在西元前", artist: "周杰倫《范特西》2001年", musicSrc: "/music/q1.mp3", videoYoutubeId: "5XK2C9w6oVk", videoStartTime: 93 },
   { id: 2, songName: "初戀", artist: "川島茉樹代《Makiyo》2000年", musicSrc: "/music/q2.MP3", videoYoutubeId: "6F_rBQwLzmY", videoStartTime: 13 },
   { id: 3, songName: "含淚跳恰恰", artist: "謝金燕《含淚跳恰恰》1995年", musicSrc: "/music/q3.MP3", videoYoutubeId: "APr9yCQa66Q", videoStartTime: 84 },
@@ -165,6 +171,7 @@ export default function App() {
   // 判斷右上角的進度文字
   const renderProgressText = () => {
     if (currentQuestion.isTransition) return "★ 隱藏階段 ★";
+    if (currentQuestion.isWarmup) return `暖身進度：${currentQuestion.id.replace('w', '')} / 3`;
     return `題目進度：${currentQuestion.id} / 30`;
   };
 
@@ -215,7 +222,7 @@ export default function App() {
                 {gameState === 'idle' && (
                   <div className="text-center animate-fade-in">
                     <h2 className="text-7xl font-black text-[#d4af37] mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] tracking-wider">
-                      第 {currentQuestion.id} 題
+                      {currentQuestion.isWarmup ? currentQuestion.displayTitle : `第 ${currentQuestion.id} 題`}
                     </h2>
                     <p className="text-xl text-[#e8c37d]/80 mb-10 tracking-widest">準備好後，點擊下方播放音樂</p>
                     <div className="w-32 h-32 rounded-full border-4 border-[#d4af37]/40 flex items-center justify-center mx-auto bg-[#4a0e17]/50 shadow-[0_0_20px_rgba(212,175,55,0.1)]">
