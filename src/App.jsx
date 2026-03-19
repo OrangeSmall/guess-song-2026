@@ -32,9 +32,9 @@ const playBeep = (freq, duration, type = 'sine') => {
 */
 const INITIAL_QUESTIONS = [
   // 🌟 暖身題
-  { id: 'w1', isWarmup: true, displayTitle: "暖身題 一", songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/w1.mp3", videoYoutubeId: "", videoStartTime: 0 },
-  { id: 'w2', isWarmup: true, displayTitle: "暖身題 二", songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/w2.mp3", videoYoutubeId: "", videoStartTime: 0 },
-  { id: 'w3', isWarmup: true, displayTitle: "暖身題 三", songName: "請填寫歌名", artist: "請填寫歌手", musicSrc: "/music/w3.mp3", videoYoutubeId: "", videoStartTime: 0 },
+  { id: 'w1', isWarmup: true, displayTitle: "暖身題 一", songName: "音浪", artist: "黃立行《音浪新歌+精選專輯》2003年", musicSrc: "/music/w1.MP3", videoYoutubeId: "umuYnIlxpcc", videoStartTime: 104 },
+  { id: 'w2', isWarmup: true, displayTitle: "暖身題 二", songName: "愛的主打歌", artist: "蕭亞軒《愛的主打歌·吻》2002年", musicSrc: "/music/w2.MP3", videoYoutubeId: "tgxolGZ_NQY", videoStartTime: 186 },
+  { id: 'w3', isWarmup: true, displayTitle: "暖身題 三", songName: "極速", artist: "鄭伊健《Ekin Magic》1999年", musicSrc: "/music/w3.MP3", videoYoutubeId: "YpY9WUQyMuM", videoStartTime: 182 },
 
   // 🎯 正式題目
   { id: 1, songName: "愛在西元前", artist: "周杰倫《范特西》2001年", musicSrc: "/music/q1.mp3", videoYoutubeId: "5XK2C9w6oVk", videoStartTime: 93 },
